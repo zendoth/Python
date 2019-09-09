@@ -33,10 +33,14 @@ def areaOfRectangle():
 #Dictionary implementation of case statement
 def calculate(choice):
     choiceSelect= {
-            "A": circumferenceOfCircle,
+            "A" : circumferenceOfCircle,
+            "a" : circumferenceOfCircle,
             "B": areaOfCircle,
+            "b": areaOfCircle,
             "C": perimeterOfRectangle,
-            "D": areaOfRectangle
+            "c": perimeterOfRectangle,
+            "D": areaOfRectangle,
+            "d": areaOfRectangle
             }
     func= choiceSelect.get(choice,invalidChoice)
     return func
@@ -44,9 +48,13 @@ def calculate(choice):
 def printAnswer(choice,answer):
     prints={
         "A": "The circumference of the circle is",
+        "a": "The circumference of the circle is",
         "B": "The area of the circle is",
+        "b": "The area of the circle is",
         "C": "The perimeter of the rectangle is",
-        "D": "The area of the rectangle is"
+        "c": "The perimeter of the rectangle is",
+        "D": "The area of the rectangle is",
+        "d": "The area of the rectangle is"
     }
     print(prints.get(choice),answer)
  
