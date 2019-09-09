@@ -60,4 +60,5 @@ def printAnswer(choice,answer):
     
 
 answer= calculate(choice)()
-printAnswer(choice,answer)
+if(answer is not None):    
+    printAnswer(choice,answer)
