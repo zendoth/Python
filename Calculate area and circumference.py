@@ -2,15 +2,9 @@
 #Author Zendoth
 #Website https://github.com/zendoth/Python
 #Date 09 September 2019
-#This Program takes in the users choice of calculation and returns back the calculated value using an\
+#This Program takes in the users choice of calculation and returns back the calculated value using an
 #implementation of switch and case statements using dictionaries within functions
 import math
-print("Please input your choice below \n",\
-      "A. Circumference of circle\n",\
-      "B. Area of circle\n",\
-      "C. Perimeter of a rectangle\n",\
-      "D. Area of a rectangle")
-choice= str(input())
 
 def invalidChoice():
     print("Invalid choice")
@@ -37,7 +31,6 @@ def areaOfRectangle():
     area=length*breadth
     return area
 
-
 #Dictionary implementation of case statement
 def calculate(choice):
     choiceSelect= {
@@ -57,7 +50,14 @@ def printAnswer(choice,answer):
         "D": "The area of the rectangle is"
     }
     print(prints.get(choice),answer)
-    
+ 
+#Main code
+print("Please input your choice below \n",\
+      "A. Circumference of circle\n",\
+      "B. Area of circle\n",\
+      "C. Perimeter of a rectangle\n",\
+      "D. Area of a rectangle")
+choice= str(input())
 
 answer= calculate(choice)()
 if(answer is not None):    
