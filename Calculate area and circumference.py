@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #Author Zendoth
 #Website https://github.com/zendoth/Python
 #Date 09 September 2019
